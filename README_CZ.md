@@ -7,6 +7,8 @@ Zajímavá je ale spíš deska samotná - má dva průchozí uŠup konektory, di
 
 A nadruhou stranu připojíš čidla - třeba čidlo [SCD41 pro měření CO2, teploty a vlhkosti vzduchu](https://www.laskakit.cz/laskakit-scd41-senzor-co2--teploty-a-vlhkosti-vzduchu/), čidla SHT41 [teploty a vlhkosti vzduchu](https://www.laskakit.cz/laskakit-sht40-senzor-teploty-a-vlhkosti-vzduchu/) a [čidla tlaku, teploty a vlhkosti vzduchu BME280](https://www.laskakit.cz/arduino-senzor-tlaku--teploty-a-vlhkosti-bme280/), [RTC Hodiny reálného času](https://www.laskakit.cz/laskakit-ds3231-orig--rtc-hodiny-realneho-casu/) s DS3231. A to je jen pár dostupných senzorů, mrkni na náš e-shop, je jich tam hóóódně moc dalších :-) 
 
+uŠup je kompatibilní s SparkFun Qwiic a Adafruit STEMMA.
+
 Pokud to chceš připojit k jiné desce, lze samozřejmě zapájet hřebínek a propojit klasickými dupont kabely. 
 
 Zpátky k OLED modulu. Takže uhlopříčka displeje je 0.91", rozlišení 128x32px. Po stranách má dva montážní otvory, díky nim bude displej držet přesně tam, kde má. Pokud ti překáží, stačí je uříznout.
