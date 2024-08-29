@@ -15,9 +15,16 @@
 #include <Adafruit_GFX.h>     // https://github.com/adafruit/Adafruit-GFX-Library
 #include <Adafruit_SSD1306.h>
 
-#define PIN_ON 11       // Power pin on LaskaKit C6 LPkit
-#define PIN_SCL 5
-#define PIN_SDA 4
+//For LaskaKit ESP32-DEVKit
+#define PIN_ON 2       // Power pin on LaskaKit ESP32-DEVKit
+#define PIN_SCL 22
+#define PIN_SDA 21
+
+//For LaskaKit LaskaKit C6-LPkit
+//#define PIN_ON 11
+//#define PIN_SCL 5
+//#define PIN_SDA 4
+
 #define DELAYTIME 1000
 #define i2c_Address 0x3c
 
@@ -28,6 +35,7 @@ void setup() {
   Serial.begin(115200);
   pinMode(PIN_ON, OUTPUT);
   digitalWrite(PIN_ON, HIGH);
+
   Wire.begin(PIN_SDA, PIN_SCL);
 
   while(!Serial);    // time to get serial running
