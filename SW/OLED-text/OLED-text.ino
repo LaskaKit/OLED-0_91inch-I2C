@@ -15,10 +15,15 @@
 #include <Adafruit_GFX.h>     // https://github.com/adafruit/Adafruit-GFX-Library
 #include <Adafruit_SSD1306.h>
 
-//For LaskaKit ESP32-DEVKit
+//For LaskaKit ESP32 DEVKit
 #define PIN_ON 2       // Power pin on LaskaKit ESP32-DEVKit
 #define PIN_SCL 22
 #define PIN_SDA 21
+
+//For LaskaKit ESP32-S3 DEVKit
+//#define PIN_ON 47       // Power pin on LaskaKit ESP32-DEVKit
+//#define PIN_SCL 2
+//#define PIN_SDA 42
 
 //For LaskaKit LaskaKit C6-LPkit
 //#define PIN_ON 11
