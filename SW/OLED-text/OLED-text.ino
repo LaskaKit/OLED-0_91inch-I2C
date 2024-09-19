@@ -40,7 +40,7 @@ void setup() {
   Serial.begin(115200);
   pinMode(PIN_ON, OUTPUT);
   digitalWrite(PIN_ON, HIGH);
-
+  delay(50); // Pause, wait to turn on
   Wire.begin(PIN_SDA, PIN_SCL);
 
   while(!Serial);    // time to get serial running
@@ -54,7 +54,7 @@ void setup() {
   // Show initial display buffer contents on the screen --
   // the library initializes this with an Adafruit splash screen.
   display.display();
-  delay(2000); // Pause for 2 seconds
+  delay(1000); // Pause for 1 second
 
   display.clearDisplay(); 
   display.setTextColor(SSD1306_WHITE);        // Draw white text
