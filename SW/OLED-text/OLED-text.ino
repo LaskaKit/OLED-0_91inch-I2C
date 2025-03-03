@@ -63,6 +63,7 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
+  /*
    display.setCursor(0,0);
    display.println((String)"Teplota: 25C");
    display.println((String)"Tlak: 950hPa");
@@ -71,4 +72,14 @@ void loop() {
    display.display(); 
    delay(500);
    display.clearDisplay();
+  */
+
+  display.setCursor(0,0);
+  display.println((String)"testtesttesttesttestt");  
+  display.println((String)"testtesttesttesttestt");
+  display.println((String)"testtesttesttesttestt");
+  display.println((String)"testtesttesttesttestt");
+  display.display(); 
+  delay(500);
+  display.clearDisplay();
 }  
