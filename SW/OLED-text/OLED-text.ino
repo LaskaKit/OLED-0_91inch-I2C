@@ -21,7 +21,7 @@
 #define PIN_SDA 21
 
 //For LaskaKit ESP32-S3 DEVKit
-//#define PIN_ON 47       // Power pin on LaskaKit ESP32-DEVKit
+//#define PIN_ON 47       // Power pin on LaskaKit ESP32-S3-DEVKit
 //#define PIN_SCL 2
 //#define PIN_SDA 42
 
@@ -30,7 +30,6 @@
 //#define PIN_SCL 5
 //#define PIN_SDA 4
 
-#define DELAYTIME 1000
 #define i2c_Address 0x3c
 
 Adafruit_SSD1306 display(128, 32, &Wire, -1);
@@ -63,23 +62,14 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-  /*
-   display.setCursor(0,0);
-   display.println((String)"Teplota: 25C");
-   display.println((String)"Tlak: 950hPa");
-   display.println((String)"Vlhkost: 65%");
-   display.println((String)"Nadmorska vyska: 554m");
-   display.display(); 
-   delay(500);
-   display.clearDisplay();
-  */
 
   display.setCursor(0,0);
-  display.println((String)"testtesttesttesttestt");  
-  display.println((String)"testtesttesttesttestt");
-  display.println((String)"testtesttesttesttestt");
-  display.println((String)"testtesttesttesttestt");
+  display.println((String)"Teplota: 25C");
+  display.println((String)"Tlak: 950hPa");
+  display.println((String)"Vlhkost: 65%");
+  display.println((String)"Nadmorska vyska: 554m");
   display.display(); 
   delay(500);
   display.clearDisplay();
+
 }  
